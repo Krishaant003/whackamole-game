@@ -1,0 +1,91 @@
+html
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    background: #98bcf4;
+}
+
+body
+{
+ text-align: center;
+}
+
+
+h1{
+    text-align: center;
+    font-size:100px;
+    line-height: 1;
+    
+}
+
+.sc
+{
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    margin-left: 15px;
+    
+    color:#fff;
+    font-style:italic;
+    
+}
+.score
+{   
+    white-space: nowrap;
+    line-height: 1;
+    border-radius: 16px;
+    color:#fff;
+    margin-right: 400px;
+}
+
+.game
+{
+    width:600px;
+    height:400px;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.hole
+{
+    flex: 1 0  33.3%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after
+{
+    display:block;
+    background: url(dirt.png) bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width:100%;
+    height:90px;
+    position:absolute;
+    z-index: 2;
+    bottom: -30px;
+}
+.mole {
+    background: url('mole.png') bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.hole.up .mole{
+    top:0;
+}
+
+button{
+    width:175px;
+    font-size: 35px;
+    height: 70px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 90px;
+}
